@@ -58,7 +58,7 @@ const config = {
       fingerprints: false,
       inject: false,
       icons: [{
-        src: path.resolve("dist/assets/icons/icon_512x512.png"),
+        src: path.resolve("assets/img/icons/icon-512x512.png"),
         sizes: [96, 128, 192, 256, 384, 512],
         destination: path.join("assets", "icons")
       }]
