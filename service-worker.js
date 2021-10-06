@@ -12,7 +12,8 @@ const FILES_TO_CACHE = [
     "./dist/app.bundle.js",
     "./dist/events.bundle.js",
     "./dist/tickets.bundle.js",
-    "./dist/schedule.bundle.js"
+    "./dist/schedule.bundle.js",
+    "./assets/icons"
   ];
   self.addEventListener('install', function (e) {
     e.waitUntil(
