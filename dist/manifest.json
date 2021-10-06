@@ -6,7 +6,7 @@
   "start_url": "../index.html",
   "description": "An app that allows you to view upcoming food events.",
   "background_color": "#01579b",
-  "theme_color": "#ffffff"
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "auto/assets/icons/icon_512x512.png",
