@@ -30,13 +30,5 @@
       "sizes": "96x96",
       "type": "image/png"
     }
-  ],
-  "name": "Food Event",
-  "short_name": "Foodies",
-  "orientation": "portrait",
-  "display": "standalone",
-  "start_url": ".",
-  "description": "An app that allows you to view upcoming food events.",
-  "background_color": "#01579b",
-  "theme_color": "#ffffff"
+  ]
 }
