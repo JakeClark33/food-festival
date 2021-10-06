@@ -24,3 +24,4 @@ $(document).ready( function() {
     }
     purchaseBtn.addEventListener("click", purchaseTicket);
 })
+module.exports = createEl;

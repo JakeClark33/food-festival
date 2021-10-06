@@ -25,3 +25,4 @@ $(document).ready( function() {
     )
     pageEl.appendChild(containerEl)
   })
+  module.exports = createEl;
