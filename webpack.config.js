@@ -8,11 +8,36 @@ module.exports = {entry: {
     schedule: "./assets/js/schedule.js",
     tickets: "./assets/js/tickets.js"
   },
-    output: {
+  
+  output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname + '/dist'),
+    path: __dirname + "/dist"
   },
-    plugins: [new webpack.ProvidePlugin({
+  module: {
+    rules: [
+      {
+        test: /\.jpg$/i,
+        use: [
+            {
+              loader: "file-loader",
+              options: {
+                esModule: false,
+                name (file) {
+                  return "[path][name].[ext]"
+                },
+                publicPath: function(url) {
+                  return url.replace("../", "/assets/")
+                }
+              }  
+            },
+            {
+                loader: 'image-webpack-loader'
+              }
+          ]
+      }
+    ]
+  },
+      plugins: [new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery"
   }),
@@ -20,5 +45,5 @@ module.exports = {entry: {
     analyzerMode: "static", // the report outputs to an HTML file in the dist folder
   })
 ],
-  mode: 'development'
+mode: 'development'
 };
